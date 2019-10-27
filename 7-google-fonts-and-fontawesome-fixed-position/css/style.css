@@ -26,3 +26,12 @@ p {
   line-height: 1.5;
   background-color:#dfd29c;
 }
+
+p:nth-child(even), h1 {
+  font-family: 'Germania One', cursive;
+}
+
+p:nth-child(odd) {
+  font-family: 'Source Code Pro', monospace;
+}
+
