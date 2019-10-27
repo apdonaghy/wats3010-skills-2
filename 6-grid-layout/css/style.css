@@ -5,8 +5,8 @@
 }
 
 html,
-    body {
-      height: 100vh;
+body {
+  height: 100vh;
 }
 
 .container {
@@ -15,30 +15,31 @@ html,
   grid-gap: 5px;
   height: 100%;
 }
+
 .container>* {
   background: #eeeeee;
 }
 
 .container>header,
-  nav,
-  aside,
-  section,
-  footer {
-    padding: 20px;
+nav,
+aside,
+section,
+footer {
+  padding: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(6, 1fr);
   }
 
-  @media only screen and (min-width: 600px) {
-    .container {
-      grid-template-columns: repeat(6, 1fr);
-    }
- 
-    .container header,
-    .container nav,
-    .container footer {
-      grid-column: span 6;
-    }
- 
-    .container section {
-      grid-column: span 4;
-    }
+  .container header,
+  .container nav,
+  .container footer {
+    grid-column: span 6;
   }
+
+  .container section {
+    grid-column: span 4;
+  }
+}
